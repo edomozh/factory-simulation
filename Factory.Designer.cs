@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -36,6 +37,7 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.progressBar2 = new System.Windows.Forms.ProgressBar();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -43,11 +45,13 @@
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.progressBar3 = new System.Windows.Forms.ProgressBar();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.progressBar4 = new System.Windows.Forms.ProgressBar();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
@@ -55,6 +59,7 @@
             this.checkBox10 = new System.Windows.Forms.CheckBox();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.progressBar5 = new System.Windows.Forms.ProgressBar();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.checkBox13 = new System.Windows.Forms.CheckBox();
@@ -82,14 +87,7 @@
             this.textBoxDetail1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label4 = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
-            this.progressBar4 = new System.Windows.Forms.ProgressBar();
-            this.progressBar5 = new System.Windows.Forms.ProgressBar();
-            this.progressBar3 = new System.Windows.Forms.ProgressBar();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -99,7 +97,6 @@
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -117,6 +114,13 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Цех 1";
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(6, 100);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(176, 23);
+            this.progressBar1.TabIndex = 19;
             // 
             // textBox3
             // 
@@ -188,6 +192,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Цех 2";
             // 
+            // progressBar2
+            // 
+            this.progressBar2.Location = new System.Drawing.Point(7, 100);
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Size = new System.Drawing.Size(176, 23);
+            this.progressBar2.TabIndex = 20;
+            // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(7, 74);
@@ -256,6 +267,13 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Цех 3";
             // 
+            // progressBar3
+            // 
+            this.progressBar3.Location = new System.Drawing.Point(6, 96);
+            this.progressBar3.Name = "progressBar3";
+            this.progressBar3.Size = new System.Drawing.Size(176, 23);
+            this.progressBar3.TabIndex = 20;
+            // 
             // textBox8
             // 
             this.textBox8.Location = new System.Drawing.Point(6, 46);
@@ -307,6 +325,13 @@
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Цех 4";
+            // 
+            // progressBar4
+            // 
+            this.progressBar4.Location = new System.Drawing.Point(6, 100);
+            this.progressBar4.Name = "progressBar4";
+            this.progressBar4.Size = new System.Drawing.Size(176, 23);
+            this.progressBar4.TabIndex = 20;
             // 
             // textBox11
             // 
@@ -376,6 +401,13 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Цех 5";
             // 
+            // progressBar5
+            // 
+            this.progressBar5.Location = new System.Drawing.Point(6, 71);
+            this.progressBar5.Name = "progressBar5";
+            this.progressBar5.Size = new System.Drawing.Size(176, 23);
+            this.progressBar5.TabIndex = 20;
+            // 
             // textBox13
             // 
             this.textBox13.Location = new System.Drawing.Point(6, 45);
@@ -428,9 +460,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(739, 49);
+            this.listBox1.Location = new System.Drawing.Point(739, 23);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(110, 381);
+            this.listBox1.Size = new System.Drawing.Size(110, 407);
             this.listBox1.TabIndex = 8;
             this.listBox1.DoubleClick += new System.EventHandler(this.listBox1_DoubleClick);
             this.listBox1.MouseLeave += new System.EventHandler(this.listBox1_MouseLeave);
@@ -453,7 +485,7 @@
             this.listBox2.FormattingEnabled = true;
             this.listBox2.Location = new System.Drawing.Point(10, 303);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(703, 69);
+            this.listBox2.Size = new System.Drawing.Size(703, 95);
             this.listBox2.TabIndex = 10;
             // 
             // textBox0
@@ -488,10 +520,10 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(0, 27);
+            this.tabControl1.Location = new System.Drawing.Point(0, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(733, 412);
+            this.tabControl1.Size = new System.Drawing.Size(733, 438);
             this.tabControl1.TabIndex = 19;
             // 
             // tabPage1
@@ -510,7 +542,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(725, 386);
+            this.tabPage1.Size = new System.Drawing.Size(725, 412);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Производство";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -672,67 +704,15 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.файлToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(849, 24);
-            this.menuStrip1.TabIndex = 20;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // файлToolStripMenuItem
-            // 
-            this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            this.файлToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
-            this.файлToolStripMenuItem.Text = "Файл";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(738, 33);
+            this.label4.Location = new System.Drawing.Point(738, 9);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(38, 13);
             this.label4.TabIndex = 21;
             this.label4.Text = "Склад";
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(6, 100);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(176, 23);
-            this.progressBar1.TabIndex = 19;
-            // 
-            // progressBar2
-            // 
-            this.progressBar2.Location = new System.Drawing.Point(7, 100);
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(176, 23);
-            this.progressBar2.TabIndex = 20;
-            // 
-            // progressBar4
-            // 
-            this.progressBar4.Location = new System.Drawing.Point(6, 100);
-            this.progressBar4.Name = "progressBar4";
-            this.progressBar4.Size = new System.Drawing.Size(176, 23);
-            this.progressBar4.TabIndex = 20;
-            // 
-            // progressBar5
-            // 
-            this.progressBar5.Location = new System.Drawing.Point(6, 71);
-            this.progressBar5.Name = "progressBar5";
-            this.progressBar5.Size = new System.Drawing.Size(176, 23);
-            this.progressBar5.TabIndex = 20;
-            // 
-            // progressBar3
-            // 
-            this.progressBar3.Location = new System.Drawing.Point(6, 96);
-            this.progressBar3.Name = "progressBar3";
-            this.progressBar3.Size = new System.Drawing.Size(176, 23);
-            this.progressBar3.TabIndex = 20;
             // 
             // Factory
             // 
@@ -741,12 +721,10 @@
             this.ClientSize = new System.Drawing.Size(849, 440);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.listBox1);
-            this.MainMenuStrip = this.menuStrip1;
             this.MinimumSize = new System.Drawing.Size(865, 478);
             this.Name = "Factory";
-            this.Text = "Factory";
+            this.Text = "Фабрика";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
@@ -766,8 +744,6 @@
             this.tabPage2.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -819,8 +795,6 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button1;
@@ -840,6 +814,7 @@
         private System.Windows.Forms.ProgressBar progressBar3;
         private System.Windows.Forms.ProgressBar progressBar4;
         private System.Windows.Forms.ProgressBar progressBar5;
+
     }
 }
 

@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Windows.Forms;
-using System.Linq;
-
-namespace Ilka
+﻿namespace Ilka
 {
+    using Ilka.Extensions;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Windows.Forms;
+
     public partial class Factory : Form
     {
         internal List<object> Log;
@@ -25,43 +26,30 @@ namespace Ilka
             Logger = new ListBoxLogger(listBox2);
             Timer = new Timer();
             Random = new Random();
+
+            progressBar1.SetState(2);
+            progressBar2.SetState(2);
+            progressBar3.SetState(2);
+            progressBar4.SetState(2);
+            progressBar5.SetState(2);
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             Workshop1 = new Workshop1(this, groupBox1.Text);
-            Workshop1.Progress += i =>
-            {
-                progressBar1.Value = i + 1;
-                progressBar1.Value = i;
-            };
+            Workshop1.Progress += i => progressBar1.Value = i;
 
             Workshop2 = new Workshop2(this, groupBox2.Text);
-            Workshop2.Progress += i =>
-            {
-                progressBar2.Value = i + 1;
-                progressBar2.Value = i;
-            };
+            Workshop2.Progress += i => progressBar2.Value = i;
 
             Workshop3 = new Workshop3(this, groupBox3.Text);
-            Workshop3.Progress += i =>
-            {
-                progressBar3.Value = i + 1;
-                progressBar3.Value = i;
-            };
+            Workshop3.Progress += i => progressBar3.Value = i;
 
             Workshop4 = new Workshop4(this, groupBox4.Text);
-            Workshop4.Progress += i =>
-            {
-                progressBar4.Value = i + 1;
-                progressBar4.Value = i;
-            };
+            Workshop4.Progress += i => progressBar4.Value = i;
 
             Workshop5 = new Workshop5(this, groupBox5.Text);
-            Workshop5.Progress += i =>
-            {
-                progressBar5.Value = i;
-            };
+            Workshop5.Progress += i => progressBar5.Value = i;
 
             foreach (var c in Controls)
             {

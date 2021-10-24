@@ -51,6 +51,7 @@
     <Compile Include="Details\Enums\DetailType.cs" />
     <Compile Include="Details\IdGenerator.cs" />
     <Compile Include="Details\Stage.cs" />
+    <Compile Include="Extensions\ProgressBarExtensions.cs" />
     <Compile Include="Factory.cs">
       <SubType>Form</SubType>
     </Compile>
