@@ -29,3 +29,5 @@ The project is written in .NET Framework, utilizing the WinForms libraries.
 ## Reporting and Analytics:
 - Users can access real-time and historical information, including processing times at each workshop, total production time for individual details, and overall production cycle time.
 
+![1](https://github.com/edomozh/factory-simulation/assets/15713802/f993e963-0c69-43d3-a8f8-ee0184cd9c74)
+![2](https://github.com/edomozh/factory-simulation/assets/15713802/f97384ea-7f27-4317-b5ba-a0b875a15df5)
